@@ -1,10 +1,11 @@
-function Electricity() {
+export default function Electricity() {
   return (
     <main className="container">
       <div className="row">
-        <div className="col">Electricity</div>
+        <div className="col">
+          <h1>Electricity Page</h1>
+        </div>
       </div>
     </main>
   );
 }
-export default Electricity;

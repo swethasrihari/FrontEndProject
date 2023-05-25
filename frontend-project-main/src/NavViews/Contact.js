@@ -1,9 +1,11 @@
-export default function Contact() {
+export default function contact() {
   return (
-    <section className="container">
-      <div>
-        <h1>Contact Page</h1>
+    <main className="container">
+      <div className="row">
+        <div className="col">
+          <h1>Contact Page</h1>
+        </div>
       </div>
-    </section>
+    </main>
   );
 }

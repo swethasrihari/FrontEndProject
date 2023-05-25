@@ -1,10 +1,11 @@
-function Overview() {
+export default function Overview() {
   return (
     <main className="container">
       <div className="row">
-        <div className="col">Overview</div>
+        <div className="col">
+          <h1>Overview Page</h1>
+        </div>
       </div>
     </main>
   );
 }
-export default Overview;

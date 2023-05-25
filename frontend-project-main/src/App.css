@@ -2,8 +2,11 @@
   width: 100vw;
   height: 100vh;
 }
-
-.body {
-  margin: 0;
-  padding: 0;
+.nav {
+  height: 100vh;
+  padding: 20pt;
+  padding-left: 0;
+}
+.container {
+  padding: 20pt;
 }
