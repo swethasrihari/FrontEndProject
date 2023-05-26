@@ -11,15 +11,15 @@ import "../App.css";
 function Navbar() {
   return (
     <>
-      <div className="d-flex align-items-start ">
+      <div class="d-flex align-items-start">
         <div
-          className="nav flex-column bg-info bg-gradient nav-pills me-3 align-items-start"
+          class="nav flex-column bg-dark nav-pills me-3"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
         >
-          <button
-            className="nav-link active my-2 "
+          <li
+            class="nav-link active"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -29,10 +29,9 @@ function Navbar() {
             aria-selected="true"
           >
             <HomeIcon />
-            <span>Home</span>
-          </button>
+          </li>
           <button
-            className="nav-link my-2 "
+            class="nav-link"
             id="v-pills-chart-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-chart"
@@ -42,11 +41,10 @@ function Navbar() {
             aria-selected="false"
           >
             <ChartIcon />
-            <span>Charts</span>
           </button>
 
           <button
-            className="nav-link my-2 "
+            class="nav-link"
             id="v-pills-contact-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-contact"
@@ -56,10 +54,9 @@ function Navbar() {
             aria-selected="false"
           >
             <ContactIcon />
-            <span>Contact</span>
           </button>
           <button
-            className="nav-link my-2 "
+            class="nav-link"
             id="v-pills-settings-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-settings"
@@ -69,13 +66,12 @@ function Navbar() {
             aria-selected="false"
           >
             <SettingsIcon />
-            <span>Settings</span>
           </button>
         </div>
 
-        <div className="tab-content" id="v-pills-tabContent">
+        <div class="tab-content" id="v-pills-tabContent">
           <div
-            className="tab-pane fade show active"
+            class="tab-pane fade show active"
             id="v-pills-home"
             role="tabpanel"
             aria-labelledby="v-pills-home-tab"
@@ -84,7 +80,7 @@ function Navbar() {
             <Home />
           </div>
           <div
-            className="tab-pane fade"
+            class="tab-pane fade"
             id="v-pills-chart"
             role="tabpanel"
             aria-labelledby="v-pills-chart-tab"
@@ -93,7 +89,7 @@ function Navbar() {
             <Chart />
           </div>
           <div
-            className="tab-pane fade"
+            class="tab-pane fade"
             id="v-pills-contact"
             role="tabpanel"
             aria-labelledby="v-pills-contact-tab"
@@ -103,7 +99,7 @@ function Navbar() {
           </div>
 
           <div
-            className="tab-pane fade"
+            class="tab-pane fade"
             id="v-pills-settings"
             role="tabpanel"
             aria-labelledby="v-pills-settings-tab"

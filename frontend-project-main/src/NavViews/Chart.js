@@ -1,34 +1,78 @@
-import Overview from "../TabViews/Overview";
-import Electricity from "../TabViews/Electricity";
-import Fuel from "../TabViews/Fuel";
-
-import { Link, Routes, Route } from "react-router-dom";
-function Charts() {
+//import BottomTabs from "../Navigation/BottomTabs";
+export default function Chart() {
   return (
-    <>
-      <div>
-        <button className="nav-item ">
-          <Link to="/" className="nav-link active" aria-current="page">
-            Overview
-          </Link>
-        </button>
-        <button className="nav-item ">
-          <Link to="/Electricity" className="nav-link">
-            Electricity
-          </Link>
-        </button>
-        <button className="nav-item">
-          <Link to="/Fuel" className="nav-link">
-            Fuel
-          </Link>
-        </button>
+    <main className="container">
+      <div className="row">
+        <div className="col">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="pills-home-tab"
+                data-toggle="pill"
+                href="#pills-home"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Overview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-profile-tab"
+                data-toggle="pill"
+                href="#pills-profile"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Electricity
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="pills-contact-tab"
+                data-toggle="pill"
+                href="#pills-contact"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Fuel
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
       </div>
-      <Routes>
-        <Route path="/" element={<Overview />} />
-        <Route path="/Electricity" element={<Electricity />} />
-        <Route path="/Fuel" element={<Fuel />} />
-      </Routes>
-    </>
+    </main>
   );
 }
-export default Charts;
