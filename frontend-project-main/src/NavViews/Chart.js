@@ -6,18 +6,18 @@ import { Link, Routes, Route } from "react-router-dom";
 function Charts() {
   return (
     <>
-      <div>
-        <button className="btn btn-primary mx-2 my-2">
-          <Link to="/" className="nav-link active" aria-current="page">
+      <div className="flex-container my-2" id="tabs">
+        <button className="btn mx-1">
+          <Link to="/" className="nav-link" aria-current="page">
             Overview
           </Link>
         </button>
-        <button className="btn btn-primary mx-2 my-2">
+        <button className="btn  mx-1">
           <Link to="/Electricity" className="nav-link">
             Electricity
           </Link>
         </button>
-        <button className="btn btn-primary mx-2 my-2">
+        <button className="btn  mx-1">
           <Link to="/Fuel" className="nav-link">
             Fuel
           </Link>

@@ -2,22 +2,27 @@
   width: 100vw;
   height: 100vh;
 }
+.navbar {
+  background-color: rgb(99, 85, 112) !important;
+}
 .nav {
   height: 100vh;
   padding: 20pt;
   padding-left: 0;
-  background-color: rgb(47, 7, 85);
+  background-color: rgb(31, 8, 54);
 }
 .container {
   padding: 20pt;
 }
-.nav .nav-link {
-  display: block;
-}
+
 .nav .nav-link:hover {
-  background-color: rgb(99, 85, 112);
+  background-color: rgb(99, 85, 112) !important;
 }
 .nav .nav-link:focus {
   --bs-text-opacity: 1;
-  background-color: rgb(47, 7, 85) !important;
+  background-color: rgb(31, 8, 54) !important;
+}
+.btn {
+  background-color: cornflowerblue;
+  width: 100pt;
 }

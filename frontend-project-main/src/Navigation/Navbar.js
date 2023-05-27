@@ -11,6 +11,13 @@ import "../App.css";
 function Navbar() {
   return (
     <>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-light ">
+            CO2 Emissions Dashboard
+          </span>
+        </div>
+      </nav>
       <div className="d-flex align-items-start ">
         <div
           className="nav flex-column nav-pills me-3 align-items-start"
