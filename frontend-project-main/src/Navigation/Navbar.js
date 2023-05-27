@@ -13,13 +13,13 @@ function Navbar() {
     <>
       <div className="d-flex align-items-start ">
         <div
-          className="nav flex-column bg-info bg-gradient nav-pills me-3 align-items-start"
+          className="nav flex-column nav-pills me-3 align-items-start"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
         >
           <button
-            className="nav-link active my-2 "
+            className="nav-link text-light text-opacity-50 active my-2"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -32,7 +32,7 @@ function Navbar() {
             <span>Home</span>
           </button>
           <button
-            className="nav-link my-2 "
+            className="nav-link text-light text-opacity-50 my-2 "
             id="v-pills-chart-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-chart"
@@ -46,7 +46,7 @@ function Navbar() {
           </button>
 
           <button
-            className="nav-link my-2 "
+            className="nav-link text-light text-opacity-50 my-2 "
             id="v-pills-contact-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-contact"
@@ -59,7 +59,7 @@ function Navbar() {
             <span>Contact</span>
           </button>
           <button
-            className="nav-link my-2 "
+            className="nav-link text-light text-opacity-50 my-2 "
             id="v-pills-settings-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-settings"
