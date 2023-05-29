@@ -1,6 +1,5 @@
 import ELineChart from ".././charts/electricityLineChart";
-//import ETable from "../component/electricityTable";
-import Page from "../component/page";
+import StateDropDownMenu from "../component/statedropdown";
 
 export default function Electricity(props) {
   return (
@@ -10,8 +9,8 @@ export default function Electricity(props) {
         <ELineChart sdata={props} />
       </div>
       <div className="p-2 m-2 border border-primary bg-info bg-gradient">
-        <h3> Yearly Emission </h3>
-        <Page />
+        <h3> Statewise CO2 Emission</h3>
+        <StateDropDownMenu />
       </div>
     </div>
   );

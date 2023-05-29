@@ -1,8 +1,6 @@
-// Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Table from "../component/tabulardata";
+import OverviewPage from "../component/overviewpage";
 import { useState } from "react";
 export default function DropDownMenu() {
   const [year, setYear] = useState("");
@@ -23,11 +21,10 @@ export default function DropDownMenu() {
           <option value="2018">2018</option>
           <option value="2019">2019</option>
           <option value="2020">2020</option>
-          <option value="2021">2021</option>
         </select>
       </label>
       <p> You selected: {year} </p>
-      <Table year={year} />
+      <OverviewPage year={year} />
     </>
   );
 }

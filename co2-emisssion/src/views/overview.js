@@ -9,7 +9,7 @@ export default function Overview(props) {
       </div>
       <div className="d-flex flex-column text-dark">
         <div className="p-2 m-2 border border-primary bg-info bg-gradient">
-          <DropDownMenu sdata={props} />
+          <DropDownMenu />
         </div>
       </div>
     </>

@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-import Records from "../component/record";
-
 import Pagination from "../component/bPagination";
+import Table from "./tabulardata";
 
-export default function Page(props) {
-  const [allData, setALLData] = useState([]);
-
+export default function OverviewPage(props) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [recordsPerPage] = useState(5);
-  const url = `https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/data/?api_key=kkaE2ndPVebUUtSQGB5WeiASLYDARBGooKE2Cr01&data[]=value&start=2015&
-  facets[sectorId][]=EC&facets[fuelId][]=TO&facets[stateId][]=${props.name}`;
+  const [recordsPerPage] = useState(10);
+
+  const url = `https://api.eia.gov/v2/co2-emissions/co2-emissions-aggregates/data/?api_key=kkaE2ndPVebUUtSQGB5WeiASLYDARBGooKE2Cr01&data[]=value&facets[fuelId][]=TO&facets[sectorId][]=TT&start=${props.year}&end=${props.year}`;
+
+  const [allData, setALLData] = useState([]);
 
   useEffect(() => {
     fetch(url)
@@ -28,7 +27,7 @@ export default function Page(props) {
 
   return (
     <div className="container mt-5">
-      <Records data={currentRecords} />
+      <Table data={currentRecords} />
       <Pagination
         nPages={nPages}
         currentPage={currentPage}

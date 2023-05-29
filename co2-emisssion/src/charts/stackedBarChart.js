@@ -1,7 +1,3 @@
-//import {
-//backgroundColors,
-//borderColors
-//} from ".././utils/stackedBarChartColors";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -74,7 +70,7 @@ export function StackedBarChart(props) {
           {
             label: "transport Dataset",
             data: props.tdata,
-            backgroundColor: "red"
+            backgroundColor: "brown"
             //borderColor: borderColors
           }
         ]

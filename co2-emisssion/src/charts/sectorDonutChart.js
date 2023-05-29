@@ -1,7 +1,6 @@
 import { Doughnut } from "react-chartjs-2";
 import { backgroundColors, borderColors } from ".././utils/donutChartColors";
 import { Chart, ArcElement, Legend, Tooltip } from "chart.js";
-//import BarChart from ".././charts/electricityBarChart";
 import { StackedBarChart } from "./stackedBarChart";
 
 Chart.register(ArcElement, Tooltip, Legend);

@@ -7,7 +7,7 @@ const Records = ({ data }) => {
         <tr>
           <th scope="col">Year</th>
           <th scope="col">State-name</th>
-          <th scope="col">Sector-name</th>
+
           <th scope="col">Fuel-name</th>
           <th scope="col">Amount</th>
         </tr>
@@ -17,7 +17,7 @@ const Records = ({ data }) => {
           <tr key={item.id}>
             <td>{item.period}</td>
             <td>{item.stateId}</td>
-            <td>{item.sectorId} </td>
+
             <td>{item.fuelId} </td>
             <td>{item.value}</td>
           </tr>
