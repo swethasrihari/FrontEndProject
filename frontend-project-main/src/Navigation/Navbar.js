@@ -1,32 +1,31 @@
 import Home from "../NavViews/Home";
 import Chart from "../NavViews/Chart";
 import Contact from "../NavViews/Contact";
+import Settings from "../NavViews/Settings";
 import HomeIcon from "@material-ui/icons/Home";
 import ChartIcon from "@material-ui/icons/InsertChart";
 import ContactIcon from "@material-ui/icons/Mail";
 import SettingsIcon from "@material-ui/icons/Settings";
+//import treeImage from "../Images/treesImage.jpeg";
 
+//import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "../App.css";
+//import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
-      <nav class="navbar">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 text-light ">
-            CO2 Emissions Dashboard
-          </span>
-        </div>
-      </nav>
+    <div>
+      {/* <img className="bgImage" src={treeImage} alt="Background trees" />*/}
+
       <div className="d-flex align-items-start ">
         <div
-          className="nav flex-column nav-pills me-3 align-items-start"
+          className="nav flex-column bg-transparent shadow  nav-pills me-3 align-items-start"
           id="v-pills-tab"
           role="tablist"
           aria-orientation="vertical"
         >
           <button
-            className="nav-link text-light text-opacity-50 active my-2"
+            className="btn text-light active my-2 mx-3"
             id="v-pills-home-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-home"
@@ -35,11 +34,13 @@ function Navbar() {
             aria-controls="v-pills-home"
             aria-selected="true"
           >
-            <HomeIcon />
-            <span>Home</span>
+            <span className="icon mx-1">
+              <HomeIcon />
+            </span>
+            <span className="title mx-1">Home</span>
           </button>
           <button
-            className="nav-link text-light text-opacity-50 my-2 "
+            className="btn text-light my-2 mx-3"
             id="v-pills-chart-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-chart"
@@ -48,12 +49,14 @@ function Navbar() {
             aria-controls="v-pills-chart"
             aria-selected="false"
           >
-            <ChartIcon />
-            <span>Charts</span>
+            <span className="icon mx-1">
+              <ChartIcon />
+            </span>
+            <span className="title mx-1">Charts</span>
           </button>
 
           <button
-            className="nav-link text-light text-opacity-50 my-2 "
+            className="btn text-light my-2 mx-3"
             id="v-pills-contact-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-contact"
@@ -62,11 +65,13 @@ function Navbar() {
             aria-controls="v-pills-contact"
             aria-selected="false"
           >
-            <ContactIcon />
-            <span>Contact</span>
+            <span className="icon mx-1">
+              <ContactIcon />
+            </span>
+            <span className="title mx-1">Contact</span>
           </button>
           <button
-            className="nav-link text-light text-opacity-50 my-2 "
+            className="btn text-light my-2 mx-3"
             id="v-pills-settings-tab"
             data-bs-toggle="pill"
             data-bs-target="#v-pills-settings"
@@ -75,8 +80,10 @@ function Navbar() {
             aria-controls="v-pills-settings"
             aria-selected="false"
           >
-            <SettingsIcon />
-            <span>Settings</span>
+            <span className="icon mx-1">
+              <SettingsIcon />
+            </span>
+            <span className="title mx-1">Settings</span>
           </button>
         </div>
 
@@ -86,7 +93,7 @@ function Navbar() {
             id="v-pills-home"
             role="tabpanel"
             aria-labelledby="v-pills-home-tab"
-            tabindex="0"
+            tabIndex="0"
           >
             <Home />
           </div>
@@ -95,7 +102,7 @@ function Navbar() {
             id="v-pills-chart"
             role="tabpanel"
             aria-labelledby="v-pills-chart-tab"
-            tabindex="0"
+            tabIndex="1"
           >
             <Chart />
           </div>
@@ -104,7 +111,7 @@ function Navbar() {
             id="v-pills-contact"
             role="tabpanel"
             aria-labelledby="v-pills-contact-tab"
-            tabindex="0"
+            tabIndex="2"
           >
             <Contact />
           </div>
@@ -114,19 +121,13 @@ function Navbar() {
             id="v-pills-settings"
             role="tabpanel"
             aria-labelledby="v-pills-settings-tab"
-            tabindex="0"
+            tabIndex="3"
           >
-            <main className="container">
-              <div className="row">
-                <div className="col">
-                  <h1>Settings Page</h1>
-                </div>
-              </div>
-            </main>
+            <Settings />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
