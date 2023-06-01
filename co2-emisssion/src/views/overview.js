@@ -4,11 +4,10 @@ import DropDownMenu from "../component/dropdown";
 export default function Overview(props) {
   return (
     <>
-      <div className="d-flex flex-column text-dark">
+      <div className="d-flex  flex-column text-dark">
         <Sector sdata={props} />
-      </div>
-      <div className="d-flex flex-column text-dark">
-        <div className="p-2 m-2 border border-primary bg-info bg-gradient">
+
+        <div className="card m-4 p-2">
           <DropDownMenu />
         </div>
       </div>

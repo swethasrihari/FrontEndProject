@@ -23,8 +23,10 @@ export default function DropDownMenu() {
           <option value="2020">2020</option>
         </select>
       </label>
-      <p> You selected: {year} </p>
-      <OverviewPage year={year} />
+      <div className="card m-4">
+        <h4> You selected: {year} </h4>
+        <OverviewPage year={year} />
+      </div>
     </>
   );
 }

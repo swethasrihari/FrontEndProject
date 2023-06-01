@@ -7,7 +7,7 @@ const Table = ({ data }) => {
           <th scope="col">Year</th>
           <th scope="col">State-name</th>
           <th scope="col">Fuel-name</th>
-          <th scope="col">Amount</th>
+          <th scope="col">Amount(million metric tons of CO2)</th>
         </tr>
       </thead>
       <tbody>

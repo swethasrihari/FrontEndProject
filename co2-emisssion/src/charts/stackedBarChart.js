@@ -27,9 +27,15 @@ export const options = {
   responsive: true,
   scales: {
     x: {
+      grid: {
+        drawOnChartArea: false
+      },
       stacked: true
     },
     y: {
+      grid: {
+        drawOnChartArea: false
+      },
       stacked: true
     }
   }

@@ -78,7 +78,7 @@ export default function Sector(props) {
   return (
     <section className="container flex flex-column text-dark">
       <div className="d-flex bd-highlight">
-        <div className="p-2 flex-fill bd-highlightp-2 m-2 border border-primary">
+        <div className="card m-4 p-2">
           <h3> CO2 Emission from various sector </h3>
           <StackedBarChart
             rdata={residentialValue}
@@ -89,23 +89,26 @@ export default function Sector(props) {
             year={year}
           />
         </div>
-        <div
-          style={styles.chartContainer}
-          className="p-2 flex-fill bd-highlight p-2 m-2 border border-primary"
-        >
+        <div className="card m-4">
           <h3>Total CO2 Emission from Sectors</h3>
-          <Doughnut data={data} />
+          <Doughnut
+            data={data}
+            options={{
+              responsive: true,
+              aspectRatio: 1.7
+            }}
+          />
         </div>
       </div>
     </section>
   );
 }
 
-const styles = {
-  chartContainer: {
-    maxWidth: "500px",
-    width: "60%",
-    height: "60%",
-    margin: "20px auto"
-  }
-};
+// const styles = {
+//   chartContainer: {
+//     maxWidth: "500px",
+//     width: "60%",
+//     height: "60%",
+//     margin: "20px auto"
+//   }
+// };
