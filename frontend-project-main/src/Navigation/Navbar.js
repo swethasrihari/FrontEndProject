@@ -102,7 +102,7 @@ function Navbar() {
             id="v-pills-chart"
             role="tabpanel"
             aria-labelledby="v-pills-chart-tab"
-            tabIndex="1"
+            tabIndex="0"
           >
             <Chart />
           </div>
@@ -111,7 +111,7 @@ function Navbar() {
             id="v-pills-contact"
             role="tabpanel"
             aria-labelledby="v-pills-contact-tab"
-            tabIndex="2"
+            tabIndex="0"
           >
             <Contact />
           </div>
@@ -121,7 +121,7 @@ function Navbar() {
             id="v-pills-settings"
             role="tabpanel"
             aria-labelledby="v-pills-settings-tab"
-            tabIndex="3"
+            tabIndex="0"
           >
             <Settings />
           </div>

@@ -27,13 +27,6 @@ function Mode() {
     document.getElementsByClassName(
       "card"
     )[0].className = `card bg-${theme} text-${textTheme} shadow my-2 mx-2`;
-
-    /*document.getElementsByClassName(
-      "nav"
-    )[0].className = `nav bg-${theme}text-${textTheme} shadow flex-column nav-pills me-3 align-items-start`;
-    document.getElementsByClassName(
-      "navbar-brand"
-    )[0].className = `navbar-brand bg-${theme} text-${textTheme}`;*/
   }, [theme, textTheme]);
 
   return (

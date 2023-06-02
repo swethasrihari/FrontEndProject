@@ -1,4 +1,4 @@
-import Mode from "../Utilities/Mode";
+import Mode from "../Utils/Mode";
 
 export default function Header() {
   return (
