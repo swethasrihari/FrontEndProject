@@ -1,9 +1,9 @@
 export default function Settings() {
   return (
-    <main className="container">
+    <main className="settingsContainer">
       <div className="row">
         <div className="col">
-          <div className="card shadow my-3 mx-5">
+          <div className="card">
             <div className="card-body">
               <h1>Settings page</h1>
               <p>This page is under construction...</p>

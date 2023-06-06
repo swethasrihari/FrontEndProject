@@ -14,19 +14,33 @@ function Mode() {
     }
   };
   useEffect(() => {
-    document.body.className = `bg-${theme} text-${textTheme}`;
-    /* if (theme === "light") {
-      document.getElementsByClassName(
-        "container"
-      )[0].className = `container bg-transparent`;
-    } else {
-      document.getElementsByClassName(
-        "container"
-      )[0].className = `container bg-${theme}`;
-    }*/
+    let imageLight = {
+      height: "350px",
+      width: "600px",
+      backgroundImage: 'url("background.jpeg")',
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      color: "white"
+    };
+    let imageDark = {
+      backgroundImage: "none",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat"
+    };
+
+    if (theme === "dark")
+      document.getElementsByClassName("App")[0].style = imageDark;
+    else document.getElementsByClassName("App")[0].style = imageLight;
+
     document.getElementsByClassName(
-      "card"
-    )[0].className = `card bg-${theme} text-${textTheme} shadow my-2 mx-2`;
+      "App"
+    )[0].className = `App bg-${theme} text-${textTheme}`;
+
+    for (let i = 0; i < document.getElementsByClassName("card").length; i++) {
+      document.getElementsByClassName("card")[
+        i
+      ].className = `card bg-${theme} text-${textTheme} shadow my-2 mx-2`;
+    }
   }, [theme, textTheme]);
 
   return (
