@@ -53,13 +53,13 @@ Please visit this url for code implementation: https://github.com/swethasrihari/
 
 ### Status
 
-The website is not deployed yet.
+The application is not deployed yet.
 
 ---
 
 ### Area of Improvement
 
-This website has front end only. As the back end for this website has not been built yet. This is an area which needs further improvement.
+This application is build for front end only. Thus the back end for this application has not been built yet. This is an area which needs further improvement.
 
 ---
 
