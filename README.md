@@ -1,5 +1,5 @@
-# FrontEndProject
-# CO2 Emission Dashboard#
+# Front End Project
+# CO2 Emission Dashboard
 
 ---
 
@@ -71,7 +71,6 @@ This website has front end only. As the back end for this website has not been b
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[https://www.chartjs.org/docs/latest/](hhttps://www.chartjs.org/docs/latest/s)
+[https://www.chartjs.org/docs/latest/](https://www.chartjs.org/docs/latest/)
 
 https://www.freecodecamp.org/news/build-a-custom-pagination-component-in-react/](https://www.freecodecamp.org/news/build-a-custom-pagination-component-in-react/)
-
