@@ -1,7 +1,7 @@
 import Mode from "../Utilities/Mode";
 import Clock from "../Utilities/Clock";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div>
       <div className="navbar">
@@ -11,7 +11,7 @@ export default function Header() {
           </span>
 
           <span className="bg-transparent ">
-            <Mode />
+            <Mode modeToggler={props.modeToggler} />
             <div className="Clock text-light">
               <Clock />
             </div>

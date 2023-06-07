@@ -1,5 +1,5 @@
 {
-
+  "name": "shatabdiintegration",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -12,17 +12,14 @@
     "@mui/icons-material": "5.11.16",
     "@mui/material": "5.13.2",
     "bootstrap": "5.2.3",
-
+    "chart.js": "4.3.0",
+    "chartjs-chart-geo": "4.2.0",
     "csbbust": "1.0.1",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
-    "react-bootstrap": "2.7.2",
-    "react-carousel-slider": "2.0.13",
+    "react-bootstrap": "2.7.4",
     "react-chartjs-2": "5.2.0",
     "react-dom": "18.2.0",
-
-    "react-responsive-carousel": "3.2.23",
-
     "react-router-dom": "6.10.0",
     "react-scripts": "5.0.1"
   },

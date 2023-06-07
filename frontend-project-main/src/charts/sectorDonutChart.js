@@ -2,10 +2,14 @@ import { Doughnut } from "react-chartjs-2";
 import { backgroundColors, borderColors } from ".././utils/donutChartColors";
 import { Chart, ArcElement, Legend, Tooltip } from "chart.js";
 import { StackedBarChart } from "./stackedBarChart";
+import React, { useEffect, useState, useContext } from "react";
+import { ModeContext } from "../App";
 
 Chart.register(ArcElement, Tooltip, Legend);
 
 export default function Sector(props) {
+  const mode = useContext(ModeContext);
+
   let year = [];
   let residentialValue = [];
   let industrialValue = [];
@@ -76,9 +80,9 @@ export default function Sector(props) {
   };
 
   return (
-    <section className="container flex flex-column text-dark">
+    <section className="d-flex flex-column text-dark">
       <div className="d-flex bd-highlight">
-        <div className="card m-4 p-3">
+        <div className={`card bg-${mode.bg} text-${mode.text} shadow mx-3 p-3`}>
           <h3> 5 years CO2 emission from various sectors </h3>
           <StackedBarChart
             rdata={residentialValue}
@@ -89,7 +93,7 @@ export default function Sector(props) {
             year={year}
           />
         </div>
-        <div className="card m-4 p-3">
+        <div className={`card bg-${mode.bg} text-${mode.text} shadow m-4 p-3`}>
           <h3>Total CO2 emission from sectors</h3>
           <Doughnut
             data={data}

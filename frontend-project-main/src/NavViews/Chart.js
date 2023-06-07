@@ -4,6 +4,7 @@ import Fuel from "../TabViews/Fuel";
 import { Link, Routes, Route } from "react-router-dom";
 //import { useState } from "react";
 import { useState, useEffect } from "react";
+import TransportChart from "../views/TransportChart";
 function Charts() {
   //const [buttonActive, setButtonActive] = useState("");
   const url =
@@ -46,6 +47,13 @@ function Charts() {
               </Link>
             </button>
           </span>
+          <span className="mx-2">
+            <button className="btn btn-secondary">
+              <Link to="/Transport" className="nav-link">
+                Transport
+              </Link>
+            </button>
+          </span>
         </div>
       </div>
 
@@ -56,6 +64,7 @@ function Charts() {
           element={<Electricity sdata={sectorData} />}
         />
         <Route path="/Fuel" element={<Fuel sdata={sectorData} />} />
+        <Route path="/Transport" element={<TransportChart />} />
       </Routes>
     </>
   );

@@ -1,7 +1,10 @@
 import GeoChart from "../charts/geoChart";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import HomeSlider from "../Utilities/HomeSlider";
+import { ModeContext } from "../App";
+
 export default function Home() {
+  const mode = useContext(ModeContext);
   const [allData, setAllData] = useState([]);
 
   let url =
@@ -19,7 +22,9 @@ export default function Home() {
     <div className="d-flex flex-column">
       <div className="row">
         <div className="col">
-          <div className="card shadow my-3 mx-5">
+          <div
+            className={`card bg-${mode.bg} text-${mode.text} shadow mx-5 my-3`}
+          >
             <div className="card-body">
               <div className="card-title">
                 <h2>What's this about?</h2>
@@ -40,15 +45,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/*<div className="col">
+        <div className="col">
           <div className="globe"></div>
-  </div>*/}
-        <div
+        </div>
+        {/* <div
           className="col"
           style={{ display: "block", width: 500, height: 30, padding: 30 }}
         >
           <HomeSlider />
-        </div>
+       </div>*/}
       </div>
     </div>
   );

@@ -8,9 +8,7 @@ export default function Overview(props) {
         <Sector sdata={props} />
       </div>
 
-      <div className="card m-4">
-        <DropDownMenu />
-      </div>
+      <DropDownMenu />
     </>
   );
 }

@@ -1,12 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import OverviewPage from "../component/overviewpage";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ModeContext } from "../App";
+
 export default function DropDownMenu() {
+  const mode = useContext(ModeContext);
+
   const [year, setYear] = useState("");
 
   return (
-    <div className="m-3 p-3">
+    <div className={`card bg-${mode.bg} text-${mode.text} m-4 p-3`}>
       <label>
         Please choose year:{""}
         <select
