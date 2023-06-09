@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
-import TransportData from "../components/TransportData";
+import { useEffect, useState, useContext } from "react";
+import TransportData from "../component/TransportData";
+import "../styles.css";
+import { ModeContext } from "../App";
 
 export default function TransportTable() {
+  const mode = useContext(ModeContext);
   const [transport, setTransport] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -23,21 +26,27 @@ export default function TransportTable() {
   }, [errorMessage]);
 
   return (
-    <div className="Box">
-      <h3>Most recent 2 years CO2 emission in Oregon</h3>
-      <table className="m-0">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Fuel Name</th>
-            <th>Carbon Emission (million metric tons)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* create a component */}
-          <TransportData transport={transport} />
-        </tbody>
-      </table>
+    <div className={`bg-${mode.bg} text-${mode.text} card m-4 p-3`}>
+      <div className="card-body">
+        <div className="card-title text-center">
+          <h5>
+            CO2 emissions by Fuel product in Oregon for most recent 2 years
+          </h5>
+          <table className="m-0">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Fuel Product</th>
+                <th>Carbon Emission (mmt)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* create a component */}
+              <TransportData transport={transport} />
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }
