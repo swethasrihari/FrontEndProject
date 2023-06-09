@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Box {
+  margin: 40px;
+  width: 400px;
+}
+
+.searchBar {
+  height: 30px;
+}
+
+table {
+  width: 800px;
+  height: 200px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: #96978f;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover tr {
+  background-color: #ebece2;
+  color: white;
+  font-weight: bold;
+}
+
+th {
+  border-bottom: 1px solid black;
+  width: 27%;
+}
+
+td {
+  text-align: center;
+}
