@@ -1,6 +1,5 @@
 import GeoChart from "../charts/geoChart";
 import React, { useEffect, useState, useContext } from "react";
-import HomeSlider from "../Utilities/HomeSlider";
 import { ModeContext } from "../App";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        //console.log(data.response.data);
         setAllData(data.response.data);
       })
       .catch((error) => console.log(error));
@@ -21,7 +19,7 @@ export default function Home() {
   return (
     <div className="d-flex flex-column">
       <div className="row">
-        <div className="col">
+        <div className="col-9">
           <div
             className={`card bg-${mode.bg} text-${mode.text} shadow mx-5 my-3`}
           >
@@ -39,21 +37,15 @@ export default function Home() {
                 emission data from EAI (U.S.Energy Information Administration)
                 API.
               </div>
-              <div className="card-footer">
+              <div className="card-footer text-center">
                 <GeoChart data={allData} />
               </div>
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col my-5">
           <div className="globe"></div>
         </div>
-        {/* <div
-          className="col"
-          style={{ display: "block", width: 500, height: 30, padding: 30 }}
-        >
-          <HomeSlider />
-       </div>*/}
       </div>
     </div>
   );
