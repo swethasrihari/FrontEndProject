@@ -9,18 +9,13 @@ table {
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-/* td { background-color: #92c5de; }
-
-tr { background-color: #92c5de; } */
 
 tr:hover td {
-  /* background-color: #edf8b1; */
   background-color: #96978f;
   color: white;
   font-weight: bold;
 }
 tr:hover tr {
-  /* background-color: #edf8b1; */
   background-color: #ebece2;
   color: white;
   font-weight: bold;
