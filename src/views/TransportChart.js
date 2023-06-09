@@ -93,7 +93,6 @@ const TransportChart = () => {
   }
 
   let callFunc = evaluateOutput(fuelArray, amountEm, yearRange);
-  //console.log("filter", callFunc[3]);
 
   function uniqueYearFunc(sortYear) {
     const newArr = [];
