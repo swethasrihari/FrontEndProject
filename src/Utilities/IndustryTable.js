@@ -1,7 +1,7 @@
 import IndustryFetch from "./IndustryFetch";
-import { useState } from "react";
 export default function IndustryTable(input) {
   const data = IndustryFetch();
+
   return (
     <table className="table table-hover ">
       <thead>
@@ -22,13 +22,13 @@ export default function IndustryTable(input) {
         </tr>
       </thead>
       <tbody>
-        {data.map((row) => {
+        {data.map((row, index) => {
           return (
-            <tr key={row.stateId}>
+            <tr key={index}>
               <td>{row.period}</td>
               <td>{row.stateId}</td>
 
-              <td>{row.fuelId} </td>
+              <td>{row["fuel-name"]} </td>
               <td>{row.value}</td>
             </tr>
           );
