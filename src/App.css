@@ -1,6 +1,6 @@
 .App {
-  width: 100vw;
   background-image: url("background.jpeg");
+  width: 100vw;
   filter: brightness(99%);
   align-items: center;
   position: absolute;
@@ -30,8 +30,6 @@ nav {
 .container {
   height: 100%;
   width: 100%;
-
-  /*background-color: transparent !important;*/
 }
 .btn:hover {
   background-color: darkgray;
@@ -55,20 +53,14 @@ nav {
 .Mode .btn {
   color: white;
 }
-/*.card {
-  position: absolute;
-  height: 60vh;
-  width: 60vw;
-  top: 15%;
-  left: 5%;
-}*/
+
 .githubLogo {
   padding: 7pt;
   color: white;
 }
 .wrapper {
   position: relative;
-  height: 500px;
+  height: 700px;
 }
 .footer {
   padding: 10pt;
@@ -78,10 +70,8 @@ nav {
   right: 0;
 }
 .globe {
-  /*height: 300px;
-  width: 300px;*/
-  height: 200px;
-  width: 200px;
+  height: 275px;
+  width: 275px;
   background-image: url("earthMap.jpeg");
   position: absolute;
   margin: auto;
@@ -89,31 +79,13 @@ nav {
   background-size: cover;
   box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
   animation: spin 30s linear alternate infinite;
-  left: 75vw;
-  /*left: 60vw;*/
+  left: 78vw;
 }
 @keyframes spin {
   100% {
     background-position: 100%;
   }
 }
-
-/*@media (max-width: 768px) {
-  .overview .card {
-    width: auto;
-  }
-
-  .electricty .card {
-    width: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .electricty.card,
-  .overview .card {
-    width: 22rem;
-  }
-}*/
 
 @media only screen and (max-width: 510px) {
   .globe {
