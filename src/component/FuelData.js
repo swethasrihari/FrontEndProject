@@ -1,27 +1,3 @@
-// const FuelData = ({ fuel }) => {
-//   //  console.log("Fuel is:", fuel);
-//   return (
-//     <>
-//       {" "}
-//       {fuel.map((curFuel) => {
-//         const { period, sectorId, fuelId, value } = curFuel;
-
-//         if (sectorId === "TT") {
-//           return (
-//             <tr>
-//               <td key="0">{period}</td>
-//               <td key="1">{sectorId}</td>
-//               <td key="2">{fuelId}</td>
-//               <td key="3">{value}</td>
-//             </tr>
-//           );
-//         } else return "";
-//       })}
-//     </>
-//   );
-// };
-// export default FuelData;
-
 const FuelData = ({ fuel }) => {
   const fuelTT = fuel.filter((item) => {
     return item.sectorId === "TT";
