@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
   const pageNumbers = [...Array(nPages + 1).keys()].slice(1);
 
@@ -11,28 +12,28 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
     <nav className="container">
       <ul className="pagination pagination-sm justify-content-center">
         <li className="page-item">
-          <a className="page-link" onClick={prevPage} href="#">
+          <Link className="page-link" onClick={prevPage} href="#">
             Previous
-          </a>
+          </Link>
         </li>
         {pageNumbers.map((pgNumber) => (
           <li
             key={pgNumber}
             className={`page-item ${currentPage === pgNumber ? "active" : ""} `}
           >
-            <a
+            <Link
               className="page-link"
               onClick={() => setCurrentPage(pgNumber)}
               href="#"
             >
               {pgNumber}
-            </a>
+            </Link>
           </li>
         ))}
         <li className="page-item">
-          <a className="page-link" onClick={nextPage} href="#">
+          <Link className="page-link" onClick={nextPage} href="#">
             Next
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
